@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
  */
 public class staticTests {
     public static void testOfAllInOneMethod(){
-        String filename = "photoForTest_16.jpg";
+        String filename = "photoForTest_18.jpg";
         
         
         BufferedImage image = null;
@@ -31,7 +31,7 @@ public class staticTests {
         }
         
         BufferedImage imageToPrint = imageProcessing.staticImageProcessingMethods.getBufferedImageWithCorrectAspectRatio(image, 0.5);
-        imageToPrint = imageProcessing.staticImageProcessingMethods.getBWBufferedImageWithinMaxSizes(imageToPrint, 110, 80);
+        imageToPrint = imageProcessing.staticImageProcessingMethods.getBWBufferedImageWithinMaxSizes(imageToPrint, 140, 80);
         System.out.println("Width: " + imageToPrint.getWidth() + " Height: " + imageToPrint.getHeight());
         System.out.println(staticImageProcessingMethods.getStringOfCharactersForImage(imageToPrint, "x"));
     }
